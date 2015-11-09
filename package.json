@@ -1,0 +1,17 @@
+{
+  "name": "sample-webdriverio",
+  "private": true,
+  "version": "0.0.1",
+  "author": "Daniel Gasienica <daniel@gasienica.ch>",
+  "main": "index.js",
+  "dependencies": {
+    "selenium-standalone": "^4.7.1",
+    "express": "^4.13.3",
+    "webdriverio": "^3.2.6"
+  },
+  "scripts": {
+    "ss":"selenium-standalone",
+    "prestart": "npm run ss install && npm run ss start",
+    "start":"node index.js"
+  }
+}
